@@ -7,7 +7,7 @@
 }
 
 header{
-    background-color: #ffcc00;
+    background-color: #ffcd03;
     box-shadow: 0px 3px 10px #5c5c5c;
 }
 
@@ -34,6 +34,8 @@ header{
     padding: 10px 15px;
     border-radius: 5px;
     color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
     transition: 0.45s;
 }
 
@@ -47,37 +49,118 @@ header{
 .button-style:hover{
     background-color: aliceblue;
     color: black;
+    font-weight: bold;
     transition: 0.45s;
 }
 
 /* CARD */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
 
-.div-container{
+.card {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#4BC587, #4BC587);
+    transition: all .5s;
+}
+
+.card:hover {
+    background-image: linear-gradient(#5EC54B, #4BC565);
+}
+
+.card .img {
+    width: 360px;
     display: flex;
     justify-content: center;
-    height: 100vh;
     align-items: center;
-}
-
-.div-card{
-    height: 500px;
-    margin: 50px;
-    box-shadow: 5px 5px 20px black;
-    overflow: hidden;
-}
-
-.img-card{
-    height: 500px;
-    width: 350px;
-    border-radius: 3px;
-}
-
-.intro{
     height: 200px;
-    width: 350px;
-    padding: 6px;
+    background-image: url('../img/amazonas.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+    color: aliceblue;
+}
+
+.card:hover .img {
+    width: 430px;
+    opacity: 1;
+}
+
+.card:hover .img span {
+    font-size: 28px;
+}
+
+.card .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
     box-sizing: border-box;
-    position: absolute;
-    background: rgb(27, 27, 27, .5);
-    color: aliceblue; /* 3:51 */
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.card .content .desc {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: .8;
+    margin-top: 8px;
+    color: aliceblue;
+}
+
+.card .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 24px;
 }
