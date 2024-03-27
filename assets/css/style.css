@@ -24,7 +24,7 @@ header{
 }
 
 .img-logo{
-    width: 130px;
+    width: 140px;
 }
 
 .button-style{
@@ -35,6 +35,9 @@ header{
     border-radius: 5px;
     color: aliceblue;
     font-weight: bold;
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
     cursor: pointer;
     transition: 0.45s;
 }
@@ -54,13 +57,21 @@ header{
 }
 
 /* CARD */
+
+.div-central-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Card 1 */
 .container {
     width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aliceblue;
 }
 
 .card {
@@ -153,6 +164,7 @@ header{
 
 .card .arrow {
     padding: 15px;
+    color: aliceblue;
     transform: rotate(-180deg);
     transition: all .5s;
 }
@@ -164,3 +176,234 @@ header{
 .card .arrow span {
     font-size: 24px;
 }
+/* FIM CARD 1 */
+
+.link{
+    text-decoration: none;
+}
+
+/* Card 2 */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card2 {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#dbf301, #f7a40b);
+    transition: all .5s;
+}
+
+.card2:hover {
+    background-image: linear-gradient(#dbf301, #c4da07);
+}
+
+.card2 .img2 {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('../img/nordst.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card2 .img2 span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+    color: black;
+}
+
+.card2:hover .img2 {
+    width: 430px;
+    opacity: 1;
+}
+
+.card2:hover .img2 span {
+    font-size: 28px;
+}
+
+.card2 .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card2:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card2 .content p {
+    margin: 0;
+}
+
+.card2 .content .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.card2 .content .desc {
+    font-size: 14px;
+    font-weight: 800;
+    opacity: .8;
+    margin-top: 8px;
+    color: black;
+}
+
+.card2 .arrow {
+    padding: 15px;
+    color: aliceblue;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card2:hover .arrow {
+    transform: rotate(0);
+}
+
+.card2 .arrow span {
+    font-size: 24px;
+}
+/* FIM CARD 2 */
+
+/* Card 3 */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card3 {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#dbf301, #6439ff67);
+    transition: all .5s;
+}
+
+.card3:hover {
+    background-image: linear-gradient(#ffbb00, #f3c23a);
+}
+
+.card3 .img3 {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('../img/parares.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card3 .img3 span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+    color: black;
+}
+
+.card3:hover .img3 {
+    width: 430px;
+    opacity: 1;
+}
+
+.card3:hover .img3 span {
+    font-size: 28px;
+}
+
+.card3 .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card3:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card3 .content p {
+    margin: 0;
+}
+
+.card3 .content .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.card3 .content .desc {
+    font-size: 14px;
+    font-weight: 800;
+    opacity: .8;
+    margin-top: 8px;
+    color: black;
+}
+
+.card3 .arrow {
+    padding: 15px;
+    color: aliceblue;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card3:hover .arrow {
+    transform: rotate(0);
+}
+
+.card3 .arrow span {
+    font-size: 24px;
+}
+/* FIM CARD 3 */
